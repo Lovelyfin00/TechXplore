@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+div.top-flex {
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 5px; */
+}
+div.logo {
+    margin-top: 16px;
+}
+ul.nav-flex {
+    display: flex;
+}
+
+li.nav {
+    margin-right: 10px;
+    height: 40px;
+    /* width: 130px; */
+    left: 1261px;
+    top: 16px;
+}
+
+a.navlink {
+    color: blue;
+}
+
+li.home {
+    text-decoration: underline;
+}
+
+li.nav button {
+    background-color: #00BE7E;
+    color: white;
+    height: 40px; 
+    width: 130px; 
+    left: 1261px;
+    top: 16px;
+    border-radius: 8px;
+    border: none;
+
+}
+
+button a.navlink {
+    color: white;
+}
+
+/* for all section header */
+h1.section-header {
+    text-align: center; 
+}
+/* the gallery section */
+
+section.gallery {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+section.gallery > div {
+    padding-left: 100px;
+   
+}
+
+section.gallery p {
+    width: 250px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 130%;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    
+    color: rgba(46, 42, 42, 0.7);
+}
+
+section.gallery h1 {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(46, 42, 42, 0.9)
+}
+
+section.gallery button {
+    background-color: #195EF7;
+    border: none;
+    border-radius: 8px;
+    width: 250px;
+    height: 40px;
+    color: white;
+}
+
+section.gallery button a {
+    color: white;
+    font-weight: bolder;
+}
+
+.fig-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+div.fig-item {
+    border-right: 2px solid black;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+strong {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* courses section */
+div.courses-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+
+
+div.course {
+    width: 335px;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+}
+
+div.course-desc {
+    background: rgba(223, 227, 238, 0.7);
+    margin-top: 0;
+    padding: 10px;
+}
+
+p.course-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* how it works section */
+div.steps {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+div.step-no {
+    /* background-image: url("../images/bg-green.png");
+    background-repeat: no-repeat;
+    float: left; */
+  
+    width: 104px;
+    height: 106px;
+    background: #00BE7E;
+    border-radius: 16px;
+    padding-top: 50px;
+    transform: rotate(-140deg);
+}
+
+div.step-no strong {
+    transform: rotate(140deg);
+    color: white;
+    text-align: center;
+}
+
+div.step {
+    width: 281px;
+}
+
+/* why join us today section */
+section.join-us {
+    background-color: #195EF7;
+}
+
+section.join-us h1 {
+    color: white;
+    padding-top: 50px;
+}
+
+p.xplore {
+    color: white;
+    line-height: 130%;
+}
+
+div.join-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+div.features {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: start;
+    gap: 30px;
+}
+div.feature {
+    width: 250px;
+    height: 120px;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+section.join-us button {
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #00BE7E;
+    color: white;
+    margin-top: 30px;
+    font-size: 24px;
+
+}
+
+/* our partners section */
+
+div.partners {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+
+/* footer section */
+footer {
+    background-color: #195EF7;
+    color: white;
+}
+div.footer {
+    display: grid;
+    grid-template-columns: 25% 20% 15% 15% 25%;
+    justify-content: space-around;
+}
+
+div.footer>div {
+    padding-left: 30px;
+}
+
+nav.social-media a {
+    margin-right: 15px;
+}
+
+ul.links {
+    padding-left: 0;
+}
+
+li.link {
+    margin-bottom: 10px;
+}
+li.link a {
+    color: white;
+}
+button.sub {
+    height: 35px;
+    border: none;
+    margin-left: 0;
+    background-color: #00BE7E;
+}
+button.sub a {
+    color: white;
+}
+input {
+    height: 35px;
+    border: none;
+    padding-left: 5px;
+    margin-left: 0;
+}
+p.copyright {
+    text-align: center;
+    color: rgba(196, 196, 196, 0.6);
+    padding-bottom: 5px;
+}
