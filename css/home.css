@@ -334,6 +334,10 @@ div.footer>div {
     padding-left: 30px;
 }
 
+div.footer img.xplore {
+    margin-top: 20px;
+}
+
 nav.social-media a {
     margin-right: 15px;
 }
