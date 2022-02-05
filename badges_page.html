@@ -15,26 +15,27 @@
     </head>
     <body>
 
-         <ul>
-            <li><img src="img/Logo_trasparent.png" alt="logo" class="logo"></li>
-                <li><a href="index.html"><b>Home</b></a></li>
+            <ul class="container">
+                <li><img src="img/Logo_trasparent.png" alt="logo" class="logo"></li>
+                <li><a href="home_page.html" class="home" style="float:left;">Home</a></li>
 
                     
-                    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">My profile</a>
-                        <div class="dropdown-content">
-                            <a href="#top">My course</a>
-                            <a href="badges_page.html">My profile</a>
-                            <a href="#notifications">Notifications</a>
-                            <a href="#messgaes">My messages</a>
-                            <a href="Discussion.html">Discussion</a>
-                            <a href="Job.html">Jobs/Internships</a>
-                            <a href="#payments">Payment Methods</a>
-                            <a href="#account">Account settings</a>
-                            <a href="#cart">My cart</a>
-                            <a href="index.html">Sign out</a>
-                        </div>
+                        <li class="dropdown" style="float:right;">
+                            <button class="dropbtn">My Profile</button>
+                            <div class="dropdown-content">
+                                <a href="#top">My course</a>
+                                <a href="Badges.html">My badges</a>
+                                <a href="#notifications">Notifications</a>
+                                <a href="#messgaes">My messages</a>
+                                <a href="Discussion.html">Discussion</a>
+                                <a href="Job.html">Jobs/Internships</a>
+                                <a href="#payments">Payment Methods</a>
+                                <a href="#account">Account settings</a>
+                                <a href="cart">My cart</a>
+                                <a href="home_page.html">Sign out</a>
+                            </div>
 
-                    </li>>
+                        </li>
         </ul>
                         
         <h2 class="activity">My Current Badges</h2>
@@ -57,31 +58,34 @@
             <section class="activity">
                 <div class="frontend">
                     <p class="descrip" id="FE">Introduction toMachine Learning</p>
-                    <p class="point1">75 points</p>
+                    <div>
+                        <p class="point1">75 points</p>
+                    </div>
+                    
                     <img src="img/star2.png" class="firstStar">
                 </div>
             </section>
             <div class="badge1">
-                <img src="img/newbie 1.png">
-                <img src="img/newbie 2.png">
-                <img src="img/babbt steps 1.png">
-                <img src="img/brainiac 1.png">
-                <img src="img/knowledge 1.png">
-                <img src="img/FIRST COURSE 2.png">
+                <img src="img/newbie 1.png" class="newbie1">
+                <img src="img/newbie 2.png" class="newbie2">
+                <img src="img/babbt steps 1.png" class="babbt">
+                <img src="img/brainiac 1.png" class="brainiac">
+                <img src="img/knowledge 1.png" class="knowledge1">
+                <img src="img/FIRST COURSE 2.png" class="firstcourse">
             </div>
 
-            <footer>
+            <footer class="container">
                 <div class="footer">
                     <div>
-                        <img class="xplore" src="img/Logo_whitebg_c1_50.jpg" alt="">
+                        <img class="xplore" src="images/Logo_whitebg_c1_50.jpg" alt="">
                         <p>At TechXplore, you not only get the vest courses but you get to join a community of people willing to make you grow!</p>
                         <nav class="social-media">
                             <p>Follow us on social media: </p>
-                            <a href=""><img src="img/fb.png" alt=""></a>
-                            <a href=""><img src="img/twitter.png" alt=""></a>
-                            <a href=""><img src="img/slack.png" alt=""></a>
-                            <a href=""><img src="img/ig.png" alt=""></a>
-                            <a href=""><img src="img/ln.png" alt=""></a>
+                            <a href=""><img src="images/fb.png" alt=""></a>
+                            <a href=""><img src="images/twitter.png" alt=""></a>
+                            <a href=""><img src="images/slack.png" alt=""></a>
+                            <a href=""><img src="images/ig.png" alt=""></a>
+                            <a href=""><img src="images/ln.png" alt=""></a>
                         </nav>
                     </div>
                     <div>
@@ -123,6 +127,5 @@
                 </div>
                 <p class="copyright"><small> Copyright&copy;2022 TechXplore</small><p>
             </footer>
-
     </body>
 </html>

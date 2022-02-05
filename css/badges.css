@@ -4,103 +4,120 @@
 body{
     background-color: #DFE3EE;
     font-family: 'Roboto', sans-serif;
+    align-content: center;
 }
-ul {
+ul{
+    list-style: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: white;
-  }
-  li{
-      float: left;
-  }
-  /** Remember to put padding in the two sections
-      padding-left: 150px;
-    padding-right: 150px;
-    **/
-li a, .dropbtn {
-    display: inline-block;
+
+}
+.container{
+    border-bottom: 3px solid #A7B0C7;
+}
+/** styling the image **/
+
+.logo{
+    position: absolute;
+}
+/** end here **/
+
+li a{
+    display: block;
     color: black;
-    text-align: center;
+    text-align: right; 
+    text-decoration: none;
     padding: 14px 16px;
-    text-decoration: none;   
-      }
-li a:hover, .dropdown:hover .dropbtn {
+}
+.dropdown-content{
+    padding: 0px;
+    margin: 0px;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
     background-color: #00BE7E;
-    }
-      
-li.dropdown {
+}
+li .dropdown{
+    position: relative;
     display: inline-block;
-    }
-      
-.dropdown-content {
+}
+.dropdown-content{
     display: none;
     position: absolute;
+    right: 0;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    }
-      
-.dropdown-content a {
+}
+
+.dropdown-content a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-    }
-      
-.dropdown-content a:hover {background-color: #195EF7;}
-      
-.dropdown:hover .dropdown-content {
+}
+.dropdown-content a:hover {
+    background-color: #195EF7;
+}
+.dropdown:hover .dropdown-content{
     display: block;
-    }
-.dropdown{
-    padding-left: 900px;
+}
+.dropbtn{
+    background-color: white;
+    color: black;
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
+
+}
+.home{
+    margin-left: 200px;
+    position: absolute;
+}
+.activity{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-/** styling the h2 tag**/
-.activity{
-    padding-left: 117px;
-    padding-top: 50px;
-}
+
 .frontend{
-    margin-left: 50px;    
-    width: 80%;
-    height: 187px;
-    border-radius: 20px;
-    background: rgba(0, 190, 126, 0.15);
+    border-style: none;
+    background: rgba(0, 190, 126, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 .descrip{
-    margin-left: 17px;
-    padding-top: 15px;
+    padding-left: 10px;
+    padding-top: 12px;
 }
 #FE{
-    font-family: Poppins;
-    font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
 }
 .firstStar{
     margin-left: 20px;
     padding-bottom: 15px;
 }
 .point1{
-    margin-left: 900px;
-    padding-top: 15px;
+    float: right;
+    padding-right: 5px;
+    margin-bottom: 90px;
+    margin-top: -5px;
     color: #195EF7;
 }
 .badge1{
-    margin-left: 170px;
+    align-content: center;
+    padding-top: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 15px;
 }
+
+
 /* footer section */
 footer {
     background-color: #195EF7;
@@ -108,8 +125,8 @@ footer {
 }
 div.footer {
     display: grid;
-    grid-template-columns: 25% 20% 15% 15% 25%;
-    justify-content: space-around;
+    grid-template-columns: 25% 20% 10% 10% 25%;
+    justify-content: start;
 }
 
 div.footer>div {
@@ -126,12 +143,16 @@ nav.social-media a {
 
 ul.links {
     padding-left: 0;
+    background-color: #195EF7;
 }
 
 li.link {
     margin-bottom: 10px;
-}
 
+}
+li.link a {
+    color: white;
+}
 button.sub {
     height: 35px;
     border: none;
@@ -140,6 +161,7 @@ button.sub {
 }
 button.sub a {
     color: white;
+    text-decoration: none;
 }
 input {
     height: 35px;
@@ -152,7 +174,6 @@ p.copyright {
     color: rgba(196, 196, 196, 0.6);
     padding-bottom: 5px;
 }
-
 @media screen and (max-width: 1000px) {
     /* courses section */
     div.courses-grid {
@@ -169,6 +190,9 @@ p.copyright {
         grid-template-columns: auto;
         justify-content: center;
         align-items: center;
+    }
+    ul .links{
+        text-align: left;
     }
 
     section.partners {
@@ -239,4 +263,25 @@ p.copyright {
     .nav-menu.active {
         left: 0;
     };
+}
+
+@media screen and (max-width: 500px) {
+    div.steps {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    nav.links{
+        text-align: left;
+    }
+    div.step {
+        display: block;
+    }
+
+    div.join-img {
+        display: none;
+    }
+    div.features {
+        grid-template-columns: auto;
+    }
 }
