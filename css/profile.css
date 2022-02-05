@@ -4,350 +4,167 @@
 body{
     background-color: #DFE3EE;
     font-family: 'Roboto', sans-serif;
+    align-content: center;
 }
-ul {
+ul{
+    list-style: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: white;
-  }
-  li{
-      float: left;
-  }
-  /** Remember to put padding in the two sections
-      padding-left: 150px;
-    padding-right: 150px;
-    **/
-li a, .dropbtn {
-    display: inline-block;
+
+}
+.container{
+    border-bottom: 3px solid #A7B0C7;
+}
+/** styling the image **/
+
+.logo{
+    position: absolute;
+}
+/** end here **/
+
+li a{
+    display: block;
     color: black;
-    text-align: center;
+    text-align: right; 
+    text-decoration: none;
     padding: 14px 16px;
-    text-decoration: none;   
-      }
-li a:hover, .dropdown:hover .dropbtn {
+}
+.dropdown-content{
+    padding: 0px;
+    margin: 0px;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
     background-color: #00BE7E;
-    }
-      
-li.dropdown {
+}
+li .dropdown{
+    position: relative;
     display: inline-block;
-    }
-      
-.dropdown-content {
+}
+.dropdown-content{
     display: none;
     position: absolute;
+    right: 0;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    }
-      
-.dropdown-content a {
+}
+
+.dropdown-content a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-    }
-      
-.dropdown-content a:hover {background-color: #195EF7;}
-      
-.dropdown:hover .dropdown-content {
-    display: block;
-    }
-.dropdown{
-    padding-left: 900px;
 }
+.dropdown-content a:hover {
+    background-color: #195EF7;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropbtn{
+    background-color: white;
+    color: black;
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
 
-/** styling the h2 tag**/
+}
+.home{
+    margin-left: 200px;
+    position: absolute;
+}
 .activity{
-    padding-left: 117px;
-    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .frontend{
-    margin-left: 50px;    
-    width: 80%;
-    height: 187px;
-    border-radius: 20px;
-    background: rgba(0, 190, 126, 0.15);
+    border-style: none;
+    background: rgba(0, 190, 126, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 .free{
-        /**display: inline;
-        font-size: 16px;
-        line-height: 24px;
-    **/
-    padding-bottom: 400px;
-    position: absolute;
-    width: 120px;
-    height: 24px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-
-    display: inline;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
+    display: inline-flex;
 }
 .freeIcon{
-    margin-left: 15px;
-    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: -8px;
 }
-
 .descrip{
-    margin-left: 17px;
+    padding-left: 10px;
 }
 #FE{
-    font-family: Poppins;
-    font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
 }
-.button1{
-        /* Rectangle 236 */
-    position: absolute;
-
-    background: #195EF7;
-    border-radius: 15px;
-    width: 120px;
-    height: 40px;
-    left: 960px;
-    margin-top: -34px;
-
-/**      top: 289px;  **/
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
+/** styling the buttons **/
+.button{
+    background-color: #195EF7;
+    border-radius: 5px;
+}
+.butto a{
+    color: white;
     text-decoration: none;
-
-    color: #FFFFFF;
 }
+.butto{
+    padding-left: 15px;
+    padding-bottom: 8px;
+}
+
+/** styling ends**/
 .machine{
-        margin-left: 50px;  
-        margin-top: 50px;  
-        width: 80%;
-        height: 187px;
-        border-radius: 20px;
-        background: rgba(0, 190, 126, 0.15);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    .button2{
-        /* Rectangle 236 */
-    position: absolute;
-
-    background: #195EF7;
-    border-radius: 15px;
-    width: 120px;
-    height: 40px;
-    right: 270px;
-    margin-top: -34px;
-
-    /**     bottom: 80px; **/
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-
-    color: #FFFFFF;
+    border-style: none;
+    background: rgba(0, 190, 126, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 20px;
 }
 .ui{
-    margin-left: 50px;  
-    margin-top: 50px;  
-    width: 80%;
-    height: 187px;
-    border-radius: 20px;
-    background: rgba(0, 190, 126, 0.15);
+    border-style: none;
+    background: rgba(0, 190, 126, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 20px;
 }
-.button3{
-        /* Rectangle 236 */
-    position: absolute;
-
-    background: #195EF7;
-    border-radius: 15px;
-    width: 120px;
-    height: 40px;
-    right: 270px;
-    margin-top: -34px;
-
-    /**     top: 765px; **/
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-
-    color: #FFFFFF;
-}
-
-
 .intro{
-    margin-left: 50px;    
-    width: 80%;
-    height: 187px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.15);
+    border-style: none;
+    background: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-}
-.button4{
-            /* Rectangle 236 */
-    position: absolute;
-
-    background: #195EF7;
-    border-radius: 15px;
-    width: 150px;
-    height: 40px;
-    right: 270px;
-
-    margin-top: -34px;
-   
-    /**     top: 1130px; **/
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-
-    color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 .android{
-    margin-left: 50px; 
-    margin-top: 50px;   
-    width: 80%;
-    height: 187px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.15);
+    border-style: none;
+    background: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-}
-.button5{
-            /* Rectangle 236 */
-    position: absolute;
-
-    background: #195EF7;
-    border-radius: 15px;
-    width: 150px;
-    height: 40px;
-    right: 270px;
-    margin-top: -34px;
-   
-    /** width: 120px;
-    height: 40px;
-    left: 960px;
-    top: 765px; **/
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-
-    color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 .python{
-    margin-left: 50px; 
-    margin-top: 50px;   
-    width: 80%;
-    height: 187px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.15);
+    border-style: none;
+    background: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
-.button6{
-                /* Rectangle 236 */
-    position: absolute;
-
-    background: #195EF7;
-    border-radius: 15px;
-    width: 150px;
-    height: 40px;
-    right: 270px;
-    margin-top: -34px;
-   
-    /** width: 120px;
-    height: 40px;
-    left: 960px;
-    top: 765px; **/
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-
-    color: #FFFFFF;
-}
+/**more button **/
 .more{
-    position: absolute;
-
-    background: #195EF7;
-    border-radius: 15px;
-    width: 165px;
-    height: 40px;
-    right: 192px;
-    margin-top: 80px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
+    background-color: #195EF7;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.morebutto a{
+    color: white;
     text-decoration: none;
-
-    color: #FFFFFF;
-
+}
+.morebutto{
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-bottom: 5px;
 }
