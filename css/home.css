@@ -3,9 +3,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* section, header, footer {
+section, header, footer {
     width: 100%;
-} */
+}
 
 li {
     list-style: none;
@@ -118,12 +118,11 @@ h1.section-header {
 
 section.gallery {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: auto auto;
 }
 
-section.gallery > div {
-    padding-left: 100px;
-   
+section.gallery > div:first-child {
+   padding-left: 15px;
 }
 
 section.gallery p {
@@ -148,6 +147,7 @@ section.gallery button {
     border-radius: 8px;
     width: 250px;
     height: 40px;
+    margin-bottom: 40px;
     color: white;
 }
 
@@ -158,18 +158,22 @@ section.gallery button a {
 
 .fig-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 20px;
 }
 
 div.fig-item {
-    border-right: 2px solid black;
-    padding: 10px;
-    height: fit-content;
-    width: fit-content;
+    /* border-right: 2px solid black; */
+    height: 60px;
+    min-width: 100px;
 }
-
+div.fig-item small {
+    display: block;
+    text-align: center;
+}
 strong {
     display: block;
     text-align: center;
@@ -191,7 +195,7 @@ div.course {
     height: 345px;
     display: flex;
     flex-direction: column;
-    /* row-gap: 0; */
+   
 }
 
 div.course-image img {
@@ -279,10 +283,9 @@ section.join-us button {
     border-radius: 8px;
     border: none;
     background-color: #00BE7E;
-   
+    margin-bottom: 30px;
     margin-top: 30px;
     font-size: 24px;
-
 }
 section.join-us button a {
     color: white;
@@ -298,9 +301,9 @@ div.testimonials {
 }
 
 div.testimony {
-    width: 50vw;
+    width: auto;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
     font-family: Roboto;
     font-size: 32px;
@@ -312,7 +315,7 @@ div.testimony {
     letter-spacing: 0.0125em;
     color: rgba(46, 42, 42, 0.9);
     width: 771px;
-    height: 317px;
+    height: auto;
 }
 
 div.stu-img {
@@ -322,7 +325,7 @@ div.stu-img {
 div.stu-details {
     color: rgba(46, 42, 42, 0.6);
     font-size: 20px;
-    height: 183px;
+    height: 100%;
     letter-spacing: 0.0125em;
 }
 
@@ -334,7 +337,10 @@ div.partners {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
+    row-gap: 70px;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
 /* footer section */
@@ -399,7 +405,7 @@ p.copyright {
         justify-content: center;
         align-items: center;
         row-gap: 50px;
-        /* padding: 15px 15px; */
+      
 }
 
     div.footer {
@@ -431,11 +437,6 @@ p.copyright {
         padding: 0 15px;
     }
 
-    section.join-us button {
-        margin: 50px;
-        margin-left: 5.32em;
-    }
-
     .hamburger {
         display: block;
     }
@@ -458,20 +459,19 @@ p.copyright {
         gap: 0;
         flex-direction: column;
         width: 100%;
-        text-align: center;
-        background-color: white;
+        text-align: center; 
+        background-color:  #00BE7E;;
     }
 
     li.nav {
-        /* margin-right: 10px; */
         height: 40px;
-        /* width: 130px; */
-        /* left: 1261px; */
         top: 16px;
+        
     }
     
     a.navlink {
-       color:  #00BE7E;
+       color:  white;
+       text-align:start; 
     }
 
     .nav-menu.active {
@@ -495,4 +495,15 @@ p.copyright {
     div.features {
         grid-template-columns: auto;
     }
+
+    /* figures section */
+    div.fig-item:last-child {
+        border-right: none;
+    }
+
+    section.gallery {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
 }
