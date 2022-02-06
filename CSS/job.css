@@ -90,6 +90,7 @@ li .dropdown{
     justify-content: space-around;
     margin-left: 50px;
     margin-top: 150px;
+    flex-wrap: wrap;
 }
 select {
     padding: 5px;
@@ -223,6 +224,7 @@ h3:hover {
 button {
     margin-bottom: 40px;
     margin-top: 40px;
+    border: none;
 }
 .flexbox-container {
     display: flex;
