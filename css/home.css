@@ -72,9 +72,14 @@ ul.nav-menu {
 li.nav {
     margin-right: 10px;
     height: 40px;
+    padding-top: 8px;
     /* width: 130px; */
-    left: 1261px;
-    top: 16px;
+    /* left: 1261px;
+    top: 16px; */
+}
+/* the one with button so as to align with other links */
+li.nav:last-child {
+    padding-top: unset; 
 }
 
 a.navlink {
@@ -123,6 +128,7 @@ section.gallery {
 
 section.gallery > div:first-child {
    padding-left: 15px;
+   margin-top: 50px;
 }
 
 section.gallery p {
@@ -130,22 +136,22 @@ section.gallery p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     line-height: 130%;
-    text-align: justify;
+    /* text-align: justify; */
     letter-spacing: 0.05em;
-    
-    color: rgba(46, 42, 42, 0.7);
+    font-size: 20px;
+    /* color: rgba(46, 42, 42, 0.7); */
 }
 
 section.gallery h1 {
     font-family: 'Roboto', sans-serif;
-    color: rgba(46, 42, 42, 0.9)
+    color: rgba(46, 42, 42, 0.9);
 }
 
 section.gallery button {
     background-color: #195EF7;
     border: none;
     border-radius: 8px;
-    width: 250px;
+    width: 200px;
     height: 40px;
     margin-bottom: 40px;
     color: white;
@@ -499,11 +505,17 @@ p.copyright {
     /* figures section */
     div.fig-item:last-child {
         border-right: none;
+       
     }
 
     section.gallery {
         display: grid;
         grid-template-columns: auto;
+        justify-content: center;
+    }
+    section.gallery > div:first-child {
+        margin-top: 10px;
+        padding-left: 25px;
     }
     
 }
