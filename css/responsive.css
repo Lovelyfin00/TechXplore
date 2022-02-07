@@ -1,0 +1,18 @@
+@media screen and (max-width: 799px){
+  .main-left {
+    width: 0%;
+  }
+  .main-right .section {
+    padding: 0 5px;
+  }
+  .main-right a {
+    font-size: 16px;
+    text-transform: none;
+  }
+  .main-left h2 {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    color: #000;
+  }
+}
