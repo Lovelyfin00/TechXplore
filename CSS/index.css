@@ -33,6 +33,14 @@ img {
     font-size: 32px;
     line-height: 48px;
 }
+.under-btm::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgba(46, 42, 42, 0.9);
+    max-width: 164px;
+    margin: auto;
+    margin-top: 10px;
+}
 .hamburger {
     cursor: pointer;
     height: 40px;
@@ -101,12 +109,22 @@ div.logo {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    box-shadow: 1px 4px 8px 2px rgba(196, 196, 196, 0.25);
+    border-radius: 8px;
+    max-width: 656px;
+    margin: auto;
+    padding: 10px;
 }
 .stat-item {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     text-align: center;
+}
+.figure {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 54px;
 }
 .hero-btn>a {
     color: white;
@@ -139,17 +157,30 @@ div.logo {
     justify-content: space-between;
     align-items: center;
 }
-
+.title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(46, 42, 42, 0.9)
+}
 .steps {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 40px;
+    /* display: grid;
+    justify-content: center;
+    align-items: center; */
 }
 .step {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 281px;
+    max-width: 400px;
+    /* grid-template-columns: auto auto;
+    gap: 50px;
+    align-items: center; */
 }
 
 .step-no {
@@ -202,6 +233,7 @@ div.logo {
     color: white;
 }
  footer {
+     margin-top: 60px;
     background-color: #195EF7;
     color: white;
     padding-block: 5px;
@@ -218,27 +250,28 @@ footer a {
 footer .link {
     padding: 5px;
 }
+.footer-form {
+    display: flex;
+}
 .sub-btn {
     height: 35px;
     border: none;
     margin-left: 0;
-    background-color: #00BE7E;
-}
-.sub-btn a {
     color: white;
+    background-color: #00BE7E;
 }
 input {
     height: 35px;
     border: none;
     padding-left: 5px;
-    margin-left: 0;
+    margin-right: 0;
 }
 
 .testimonials {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 20px;
+    justify-content: center;
+    gap: 20px;
 }
 .testimony {
     line-height: 130%;
@@ -257,10 +290,12 @@ input {
     border-radius: 50%;
 }
 .partners {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: auto auto/ repeat(4, 1fr);
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
+    row-gap: 60px;
 }
 
 @media screen and (min-width: 800px) {
@@ -301,6 +336,9 @@ input {
     }
     .hero-desc {
         flex-basis: 40%;
+    }
+    .figure {
+        font-size: 36px;
     }
     .courses-grid {
         display: flex;
