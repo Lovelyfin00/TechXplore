@@ -235,6 +235,9 @@ button {
     margin-right: 180px;
     
 }
+.flexbox-container>div {
+    max-width: 320px;
+}
 .flexbox1, .flexbox2, .flexbox3, .flexbox4, .flexbox5, .flexbox6, .flexbox7, .flexbox8, .flexbox9, .flexbox10, .flexbox11,.flexbox12 {
     background-color: rgba(243, 250, 245, 0.29);
     height: 395px;
